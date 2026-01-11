@@ -1,3 +1,5 @@
+// Trying classes, objects, methods, initializing attributes of class, calling functions, etc,.
+
 public class Program_2 
 {
     public static void main(String[] args) 
