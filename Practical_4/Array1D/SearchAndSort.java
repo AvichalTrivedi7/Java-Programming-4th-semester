@@ -60,5 +60,6 @@ public class SearchAndSort {
         }
         if (!found)
             System.out.println("Not found by binary search");
+        sc.close();
     }
 }

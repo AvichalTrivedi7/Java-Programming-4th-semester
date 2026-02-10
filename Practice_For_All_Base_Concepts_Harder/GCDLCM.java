@@ -22,5 +22,6 @@ public class GCDLCM {
 
         System.out.println("GCD = " + gcd);
         System.out.println("LCM = " + lcm);
+        sc.close();
     }
 }

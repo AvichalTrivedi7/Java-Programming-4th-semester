@@ -21,6 +21,7 @@ public class SumMatrix {
                 sum += mat[i][j];
 
         System.out.println("Total sum: " + sum);
+        sc.close();
     }
 }
 

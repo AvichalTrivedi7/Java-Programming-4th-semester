@@ -20,5 +20,6 @@ public class DiagonalMatrix {
         System.out.println("\nSecondary Diagonal:");
         for (int i = 0; i < n; i++)
             System.out.print(mat[i][n - 1 - i] + " ");
+        sc.close();
     }
 }

@@ -21,5 +21,6 @@ public class IncomeTax {
         }
 
         System.out.println("Tax = " + tax);
+        sc.close();
     }
 }

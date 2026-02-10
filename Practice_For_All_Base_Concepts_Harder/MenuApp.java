@@ -27,6 +27,7 @@ public class MenuApp {
                 break;
             default:
                 System.out.println("Invalid choice");
+        sc.close();
         }
     }
 }

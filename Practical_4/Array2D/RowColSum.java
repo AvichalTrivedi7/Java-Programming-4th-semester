@@ -27,6 +27,7 @@ public class RowColSum {
             for (int i = 0; i < r; i++)
                 colSum += mat[i][j];
             System.out.println("Sum of col " + j + ": " + colSum);
+        sc.close();
         }
     }
 }

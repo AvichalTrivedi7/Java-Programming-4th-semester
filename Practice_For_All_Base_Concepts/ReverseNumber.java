@@ -18,5 +18,6 @@ public class ReverseNumber {
         } while (num != 0);
 
         System.out.println("Reversed number = " + reverse);
+        sc.close();
     }
 }

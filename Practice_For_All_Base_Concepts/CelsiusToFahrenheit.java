@@ -16,6 +16,7 @@ public class CelsiusToFahrenheit {
 
         float f = convert(c);
         System.out.println("Fahrenheit = " + f);
+        sc.close();    
     }
 }
 

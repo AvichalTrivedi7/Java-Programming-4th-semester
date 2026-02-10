@@ -29,6 +29,7 @@ public class Temp {
 
             default:
                 System.out.println("Invalid choice");
+        sc.close();
         }
     }
 }

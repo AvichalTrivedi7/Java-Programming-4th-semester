@@ -22,5 +22,6 @@ public class Interest {
 
         System.out.println("Simple Interest = " + simpleInterest(p, r, t));
         System.out.println("Compound Interest = " + compoundInterest(p, r, t));
+        sc.close();
     }
 }
