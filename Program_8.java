@@ -1,41 +1,59 @@
-// About constructor overloading 
+// Array and loop related programmes (missed due to medical leave)
 
-class Students{
-    String name;
-    int age;
-    
-    // Contructors are quite special they are only meant for assignment purposes. They do NOT EVEN have void return type, they just have no return. (Yes two different things) 
-    // Constructor 1 (automatically done by jvm, we are just doing it to show how it works in the backend)
-    Students(){
-        name = " ";
-        age = 0;
-    }
+import java.util.Scanner;
 
-    // Constructor 2
-    Students(String n){
-        name = n;
-        age = 0;
-    }
+public class Program_8 {
 
-    // Constructor 3
-    Students(String n, int a){
-        name = n;
-        age = a;
-    }
+	public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        
+        // inputting and reversing
+        System.out.print("Enter number of elements: ");
+        int n = sc.nextInt();
+        int[] arr = new int[n];
+        
+        System.out.println("Enter " + n + " integers:");
+        for (int i = 0; i < n; i++) {
+            arr[i] = sc.nextInt();
+        }
+        
+        System.out.print("Original: ");
+        for (int i = 0; i < n; i++) {
+            System.out.print(arr[i] + " ");
+        }
+        System.out.println();
+        
+        System.out.print("Reverse: ");
+        for (int i = n - 1; i >= 0; i--) {
+            System.out.print(arr[i] + " ");
+        }
+        System.out.println();
+        sc.close();	
+	}
 
-    void display(){
-        System.out.println(name + " " + age);
-    }
 }
 
-public class Program_8{
-    public static void main(String[] args){
-        Students s1 = new Students();
-        Students s2 = new Students("Avi");
-        Students s3 = new Students("Avi", 21);
+/*
+public class Array2 
+{
 
-        s1.display();
-        s2.display();
-        s3.display();
+	public static void main(String[] args) 
+	{
+		        int[] bucket = {1, 2, 3, 4, 5};
+		    		        
+		    		  System.out.println("Index \t Values");
+		    		   for (int count = 0; count < bucket.length; count++)
+		    		   {
+		    		            System.out.println(count + "\t" + bucket[count]);
+		    		   }
+		    		        
+		    		    System.out.print("Reverse order: ");
+		    		    for (int count = bucket.length - 1; count >= 0; count--) 
+		    		    {
+		    		      System.out.print(bucket[count] + " ");
+		    		    }
+		    		        System.out.println();
+		    		    }
+	sc.close();	       
     }
-}
+*/
