@@ -48,7 +48,79 @@ Part C - In main():
 3. Use different overloaded methods
 4. Display final cost
 */
+class Pizza {
+
+    String size;
+    int cheeseToppings;
+    int pepperoniToppings;
+    int veggieToppings;
+
+    // Constructor
+    Pizza(String size, int cheese, int pepperoni, int veggie) {
+        this.size = size;
+        this.cheeseToppings = cheese;
+        this.pepperoniToppings = pepperoni;
+        this.veggieToppings = veggie;
+    }
+
+    // Method to calculate cost
+    double calcCost() {
+
+        int basePrice = 0;
+
+        if (size.equals("Small")) {
+            basePrice = 8;
+        } else if (size.equals("Medium")) {
+            basePrice = 10;
+        } else if (size.equals("Large")) {
+            basePrice = 12;
+        }
+
+        int toppingsCost = (cheeseToppings + pepperoniToppings + veggieToppings) * 2;
+
+        return basePrice + toppingsCost;
+    }
+
+    // Method Overloading
+
+    // 1. Add only cheese
+    void addToppings(int cheese) {
+        this.cheeseToppings += cheese;
+    }
+
+    // 2. Add cheese & pepperoni
+    void addToppings(int cheese, int pepperoni) {
+        this.cheeseToppings += cheese;
+        this.pepperoniToppings += pepperoni;
+    }
+
+    // 3. Add all toppings
+    void addToppings(int cheese, int pepperoni, int veggie) {
+        this.cheeseToppings += cheese;
+        this.pepperoniToppings += pepperoni;
+        this.veggieToppings += veggie;
+    }
+}
+
 
 public class Program_10 {
-    
+    public static void main(String[] args) {
+
+        // 1. Normal Pizza
+        Pizza normalPizza = new Pizza("Small", 1, 1, 0);
+
+        // Using overloaded method (add only cheese)
+        normalPizza.addToppings(2);
+
+        System.out.println("Normal Pizza Cost: ₹" + normalPizza.calcCost());
+
+
+        // 2. Deluxe Pizza
+        Pizza deluxePizza = new Pizza("Large", 2, 2, 2);
+
+        // Using overloaded method (add all toppings)
+        deluxePizza.addToppings(1, 1, 1);
+
+        System.out.println("Deluxe Pizza Cost: ₹" + deluxePizza.calcCost());
+    }
 }
