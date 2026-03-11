@@ -18,7 +18,8 @@ class Dog extends Animal{
 
 public class Program_14 {
     public static void main(String[] args) {
-        Dog myDog = new Dog();       
+        Dog myDog = new Dog();
+        System.out.println(myDog.breed);       
     }
 }
 
@@ -28,3 +29,5 @@ Step 1: Animal Constructor ran
 Step 2: Dog Constructor ran 
 
 because the child class contructor first goes to the parent class and that gets executed then it moves to the child class to execute the constructor*/
+
+// This is also called constructor chaining, hierarchical execution of constructors from parent to child, if a child is called.

@@ -1,6 +1,7 @@
 // Super keyword - used to explicitly use a method of the parent class that is usually/implicitly overriden.
 // super(), super.variable, super.function
 // implicitly super does work even if not written ourselves, as we saw in last program, that is the reason first parent class constructor got executed then the child's.
+/* Super constructor use in the below code */
 
 class Person1{
     String name;
