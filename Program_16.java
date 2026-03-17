@@ -1,4 +1,4 @@
-/* Using super.method() to access parent class methods */
+/* Using super.method() to access parent class methodsw */
 
 class LivingThings{
     void Breathe(){
