@@ -1,3 +1,5 @@
+// here we learn to use classes from other packages
+
 package Programs_19and20.package_2;
 
 import Programs_19and20.package_1.Animals;
