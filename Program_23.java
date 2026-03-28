@@ -1,3 +1,8 @@
+/* Thread lifecycle - 
+New (Created) -> Runnable (start() called) -> Waiting (sleep/wait) -> Runnable (woken up) -> Terminated (run() returns)
+                                                                    -> Blocked (waiting for lock)*/
+
+
 public class Program_23 extends Thread{
     public void run() {
         for (int i = 0; i < 5; i++) {
