@@ -2,7 +2,7 @@ package Program_32;
 // Using and learning about abstract window toolkit, swings. Objects (JDK) --> AWT-Components --> (Swings) JComponent - JButton, JTextfield, JLabel --> Container
 
 import javax.swing.*;
-import java.awt.*;
+/* import java.awt.*; */
 
 public class MyApp extends JFrame{
     public MyApp(){
